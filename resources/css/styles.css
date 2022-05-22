@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --red: #D13639;
+    --light-red: #DA5E61;
+
+    --text-light: #F9F9F9;
+    --text-grey: #DFDEDE;
+    --text-dark: #0A0A0A;
+
+    --dark-bg: #0A0A0A;
+    --medium-dark-bg: #292929;
+    --light-bg: #EBEBEB;
+    --medium-light-bg: #DFDEDE;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, :before, :after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-bg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image {
+    background: url('https://www.riotgames.com/darkroom/2000/108146e4872ef97e4b6a89dfd68916a8:0b7f4f2fafe52684a024e11ea13b46bd/annie-tibber-statue-day.png') no-repeat top left / cover;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-image:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(275deg,rgba(10,10,10,0) 0,rgba(10,10,10,.8) 120%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 1.750rem;
+    font-size: 0.750rem;
+    font-weight: 600;
+    letter-spacing: 0.150rem;
+}
+
+.left-nav ul {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+}
+
+.left-nav ul li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--text-light);
+    padding-right: 2.5rem;
+}
+
+.riot-big-logo {
+    color: var(--text-light);
+}
+
+#arrow-down {
+    margin-left: 0.250rem;
+    opacity: 0.3;
+}
+
+.right-nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.right-nav ul li {
+    color: var(--text-light);
+    padding-left: .5rem;
+}
+
+#global-icon {
+    margin-right: 1rem;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    width: 180px;
+    border: 1px solid var(--text-light);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.search-bar button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 0.250rem;
+    margin-left: -2.5rem;
+}
+
+.search-bar button a {
+    color: var(--text-light);
+}
+
+.sign-up-btn {
+    background-color: var(--red);
+    border: none;
+    padding: 0.5rem 1.250rem;
+    border-radius: 1rem;
+}
+
+.sign-up-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
